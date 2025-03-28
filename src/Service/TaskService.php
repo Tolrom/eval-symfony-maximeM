@@ -10,7 +10,8 @@ class TaskService
 
     public function __construct(
         private readonly EntityManagerInterface $em,
-        private readonly TaskRepository $taskRepository){}
+        private readonly TaskRepository $taskRepository
+    ){}
 
     public function save(Task $task): Task
     {
